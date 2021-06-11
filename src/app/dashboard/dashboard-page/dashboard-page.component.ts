@@ -19,7 +19,6 @@ export class DashboardPageComponent implements OnInit {
 
   async fetchStocks () : Promise<void> {
     this.stocks = await this.dashboardService.getStocks();
-    console.log(this.stocks);
   }
 
 }
